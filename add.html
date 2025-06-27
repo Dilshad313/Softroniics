@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">Main</div>
+    <div id="container"></div>
+
+    <script>
+        const content = document.getElementById("content");
+
+        //inner html
+        content.innerHTML = "<h1>Good Morning</h1>";
+        content.style.color = "red";
+
+        //textContent
+        console.log(content.textContent);
+
+        //inner text (visul based)
+        console.log(content.innerText);
+
+        const para1=document.createElement("p");
+        para1.textContent = "This is a paragraph";
+        container=document.getElementById("container");
+        container.appendChild(para1);
+        para1.style.color = "blue";
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Good Morning</h1>
+    <p class="text">First one</p>
+    <p class="text">Second one</p>
+    <div class="box">Box one</div>
+
+    <script>
+        // By id
+        const a=document.getElementById("title");
+        console.log(a.textContent);
+
+        // By class
+        const b=document.getElementsByClassName("text");
+        console.log(b[0].textContent);
+
+        // By tag
+        const c=document.getElementsByTagName("p");
+        console.log(c.length);
+
+        // By query selector (one item)
+        const d=document.querySelector(".text");
+        console.log(d.textContent);
+
+        // By query selector all (multiple items)
+        const e=document.querySelectorAll(".text")
+        e.forEach(e1=> console.log(e1.textContent));
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- counter using dom increase and decrease and reset button -->
+    <div id="counter">100</div>
+    <button id="increase">Increase</button>
+    <button id="decrease">Decrease</button>
+    <button id="reset">Reset</button>
+
+    <script>
+        let counter = document.getElementById("counter");
+        
+        let increaseBtn = document.getElementById("increase");
+        
+        let decreaseBtn = document.getElementById("decrease");
+
+        let resetBtn = document.getElementById("reset");
+
+         function updateCounter(value) {
+             counter.textContent = value;
+         }
+
+         increaseBtn.addEventListener("click", function() {
+             let currentValue = parseInt(counter.textContent);
+             updateCounter(currentValue + 1);
+         });
+
+            decreaseBtn.addEventListener("click", function() {
+             let currentValue = parseInt(counter.textContent);
+             if(counter.textContent >= 100+1){
+                updateCounter(currentValue - 1);
+             }
+            });
+         
+
+         resetBtn.addEventListener("click", function() {
+             updateCounter(100);
+         });
+         
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="old.jpg" alt="old image" id="image">
+    <div id="box" class="card"></div>
+
+    <script>
+        const image=document.getElementById("image");
+
+        // Get attribute
+        console.log(image.getAttribute("src"));
+
+        // Set attribute
+        image.setAttribute("src", "new.jpg");
+        console.log(image.getAttribute("src"));
+
+        // Remove attribute
+        image.removeAttribute("alt");
+
+        // class operations
+        const box=document.getElementById("box");
+
+        box.classList.add("active");
+        box.classList.remove("card");
+        
+    </script>
+</body>
+</html>
