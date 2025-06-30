@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+</head>
+<body>
+    <div style="text-align: center;" class="main">
+        <h2 id="change">Background color</h2>
+        <button style="border: 1px solid black; cursor: pointer;" id="btn">Click</button>
+    </div>
+
+    <script>
+        let body = document.body;
+
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function() {
+            let colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "brown"];
+
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
