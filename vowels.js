@@ -16,3 +16,18 @@ function countVowels(str) {
 const input = "Hello World";
 const count = countVowels(input);
 console.log(`Number of Vowels:${count}`);
+
+
+
+const pattern = [
+  [1, 2, 3, 4, 5],
+  [2, '', '', '', 5],
+  ['', '', 3, '', ''],
+  ['', 4, '', '', ''],
+  [5, 4, 3, 2, 1]
+];
+
+for (let row of pattern) {
+  let line = row.map(val => (val === '' ? ' ' : val)).join(' ');
+  console.log(line);
+}
