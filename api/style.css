@@ -35,8 +35,8 @@ nav h1{
 
 
 .card{
-    width: 300px;
-    height: 500px;
+    width: 330px;
+    height: 800px;
     font-size: 20px;
     gap: 30px;
     background-color: #f4f4f4;
@@ -46,5 +46,9 @@ nav h1{
     margin: 20px;
     padding: 20px;
     margin-left: 30px;
+
+}
+.align{
+    margin-left: 130px;
 }
 
